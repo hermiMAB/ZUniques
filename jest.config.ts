@@ -1,11 +1,9 @@
-import type { Config } from '@jest/types'
-
-const config: Config.InitialOptions = {
-  verbose: true,
-  transform: {
-    '^.+\\.tsx?$': 'ts-jest'
-  },
-  setupFilesAfterEnv: ['<rootDir>/polyfills.js']
-}
-
-export default config
+@@ -0,0 +1,8 @@
+ // jest.config.js
+ module.exports = {
+   verbose: true,
+   transform: {
+     '^.+\\.tsx?$': 'ts-jest',
+   },
+   setupFilesAfterEnv: ['<rootDir>/polyfills.js'],
+ };
