@@ -1,2 +1,0 @@
-# ZUniques
-Gen AI hackathon
