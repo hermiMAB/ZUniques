@@ -3,9 +3,9 @@ const http = require("http");
 const server = http.createServer((req, res) => {
     res.writeHead(200, { "Content-Type": "text/plain" });
     res.end("Hello, Azure!");
-    res.end("Hello, Azure Again!");
 });
 
-server.listen(process.env.PORT || 3000, () => {
-    console.log("Server is running...");
+const PORT = process.env.PORT || 8080;
+server.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
